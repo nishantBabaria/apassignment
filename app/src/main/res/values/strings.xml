@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="image_view">image_view</string>
+
+    <string name="retry">Retry</string>
+    <string name="explore">Explore</string>
+    <string name="no_internet">No internet available</string>
+</resources>

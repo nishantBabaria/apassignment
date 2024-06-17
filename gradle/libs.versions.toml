@@ -1,0 +1,64 @@
+[versions]
+agp = "8.3.2"
+kotlin = "2.0.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+#espressoCore = "3.5.1"
+#activityCompose = "1.7.0"
+#composeBom = "2023.08.00"
+
+kspVersion = "2.0.0-1.0.22"
+lifecycleRuntimeKtx = "2.8.1"
+coreKtx = "1.13.1"
+appcompatVersion = '1.7.0'
+constraintlayoutVersion = '2.1.4'
+recyclerviewVersion = '1.3.2'
+retrofitVersion = '2.9.0'
+rxJavaVersion = '3.0.2'
+lifeCycleVersion = '2.2.0'
+daggerVersion = '2.48'
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-extensions", version.ref = "lifeCycleVersion" }
+androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifeCycleVersion" }
+
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompatVersion" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayoutVersion" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerviewVersion" }
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion" }
+retrofit-adapter-rxjava2 = { group = "com.squareup.retrofit2", name = "adapter-rxjava3", version.ref = "retrofitVersion" }
+
+reactivex-rxandroid = { group = "io.reactivex.rxjava3", name = "rxandroid", version.ref = "rxJavaVersion" }
+reactivex-rxjava = { group = "io.reactivex.rxjava3", name = "rxjava", version.ref = "rxJavaVersion" }
+
+#dagger = { group = "com.google.dagger", name = "dagger", version.ref = "daggerVersion" }
+#dagger-compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "daggerVersion" }
+#dagger-android-support = { group = "com.google.dagger", name = "dagger-android-support", version.ref = "daggerVersion" }
+#dagger-android-processor = { group = "com.google.dagger", name = "dagger-android-processor", version.ref = "daggerVersion" }
+
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+#androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+#androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+#androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+#androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+#androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+#androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+#androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+#androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+#androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+#androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinAndroidKsp = { id = "com.google.devtools.ksp", version.ref ="kspVersion" }
+#kotlinCompose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+
